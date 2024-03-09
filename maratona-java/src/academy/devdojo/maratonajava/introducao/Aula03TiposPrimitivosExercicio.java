@@ -16,6 +16,6 @@ public class Aula03TiposPrimitivosExercicio {
         String dateSalaryReceived = "03-09-2024";
 
         System.out.println("Eu "+name+" morando no endereço "+address+" confirmo que recebi " +
-                "o salário de R$"+salary+" na data de "+date);
+                "o salário de R$"+salary+" na data de "+dateSalaryReceived);
     }
 }
