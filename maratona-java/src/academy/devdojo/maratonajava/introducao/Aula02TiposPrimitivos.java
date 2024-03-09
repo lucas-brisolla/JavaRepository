@@ -6,11 +6,12 @@ public class Aula02TiposPrimitivos {
         long longNumber = 10000;
         short ageShort = 100;
         double salaryDouble = 2000.50;
-        float salaryFloat = 2500;
+        float salaryFloat = 2500.0f;
         byte byteNumber = 127;
         boolean yes = true;
         boolean no = false;
-        char character = 'A';
+        char character = 65;
+        String text = "adfjadkdfçlkdflçdke";
 
         System.out.println("The age is "+age+" years old");
         System.out.println(longNumber);
@@ -21,5 +22,6 @@ public class Aula02TiposPrimitivos {
         System.out.println(yes);
         System.out.println(no);
         System.out.println(character);
+        System.out.println(text);
     }
 }
