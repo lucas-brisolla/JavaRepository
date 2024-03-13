@@ -17,6 +17,8 @@ public class CarTest {
         toyota.year = 1993;
         toyota.price = 123000.00;
 
+        nissan = toyota;
+
         System.out.println("Car list ------------------------------------------------------------------------");
         System.out.println("Nissan car: " + nissan.name + " Model: " + nissan.model + " Year: " + nissan.year + " Price: $" + nissan.price);
         System.out.println("Toyota car: " + toyota.name + " Model: " + toyota.model + " Year: " + toyota.year + " Price: $" + toyota.price);
