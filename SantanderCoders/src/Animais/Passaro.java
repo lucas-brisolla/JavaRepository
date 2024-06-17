@@ -1,21 +1,10 @@
 package Animais;
 
-public class Passaro {
+public class Passaro extends Animais {
     static int QtdDePassaros;
-    private String nome;
-    private String cor;
-    private int idade;
-    private double peso;
-    private char sexo;
-    private String reacao;
 
     public Passaro(String nome, String cor, int idade, double peso, char sexo, String reacao) {
-        this.nome = nome;
-        this.cor = cor;
-        this.idade = idade;
-        this.peso = peso;
-        this.sexo = sexo;
-        this.reacao = reacao;
+        super(nome, cor, idade, peso, sexo, reacao);
     }
 
     public static int getQtdDePassaros() {
@@ -76,7 +65,9 @@ public class Passaro {
 
     private void Voar(){}
     private void Bicar(){}
-    private void Soar(){
+
+    @Override
+    public void soar(){
         System.out.println("PIU PIU");
     }
 }

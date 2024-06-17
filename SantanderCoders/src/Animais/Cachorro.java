@@ -1,18 +1,13 @@
 package Animais;
 
-public class Cachorro {
+public class Cachorro extends Animais {
 
     static int QtdDeCachorros;
-    private String nome;
-    private String cor;
-    private int idade;
-    private double peso;
-    private char sexo;
-    private String reacao;
 
 
 
     public Cachorro() {
+        super();
     }
 
     public Cachorro(String nome, String cor, int idade, double peso, char sexo, String reacao) {
@@ -82,10 +77,6 @@ public class Cachorro {
     }
 
 
-    public void soar() {
-        System.out.println("AU AU");
-    }
-
     public String interagir(String acao) {
 //        if (acao.equals("carinho")) {
 //            this.reacao = "feliz";
@@ -113,5 +104,9 @@ public class Cachorro {
                 break;
         }
         return this.reacao;
+    }
+    @Override
+    public void soar(){
+        System.out.println("AU AU");
     }
 }

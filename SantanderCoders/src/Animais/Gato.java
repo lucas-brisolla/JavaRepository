@@ -1,21 +1,10 @@
 package Animais;
 
-public class Gato {
-    static int QtdDeGatos;
-    private String nome;
-    private String cor;
-    private int idade;
-    private double peso;
-    private char sexo;
-    private String reacao;
+public class Gato extends Animais {
+    static  int QtdDeGatos;
 
     public Gato(String nome, String cor, int idade, double peso, char sexo, String reacao) {
-        this.nome = nome;
-        this.cor = cor;
-        this.idade = idade;
-        this.peso = peso;
-        this.sexo = sexo;
-        this.reacao = reacao;
+        super(nome, cor, idade, peso, sexo, reacao);
     }
 
     public char getSexo() {
@@ -73,11 +62,8 @@ public class Gato {
     public void setReacao(String reacao) {
         this.reacao = reacao;
     }
-
-    private void comer(){}
-    private void dormir(){}
-
-    private void soar(){
+    @Override
+    public void soar(){
         System.out.println("MIAU");
     }
 }
