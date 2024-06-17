@@ -82,7 +82,7 @@ public class Cachorro {
     }
 
 
-    public void latir() {
+    public void soar() {
         System.out.println("AU AU");
     }
 
@@ -102,7 +102,7 @@ public class Cachorro {
                 this.reacao = "feliz";
                 break;
             case "pisar no rabo":
-                latir();
+                soar();
                 this.reacao = "triste";
                 break;
             case "dar comida":
