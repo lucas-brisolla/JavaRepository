@@ -1,6 +1,6 @@
 package Animais;
 
-public class Passaro extends Animais {
+public class Passaro extends Animal {
     static int QtdDePassaros;
 
     public Passaro(String nome, String cor, int idade, double peso, char sexo, String reacao) {

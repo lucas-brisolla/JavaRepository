@@ -1,6 +1,6 @@
 package Animais;
 
-public class Cachorro extends Animais {
+public class Cachorro extends Animal {
 
     static int QtdDeCachorros;
 

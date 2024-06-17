@@ -1,26 +1,24 @@
 package Animais;
 
-public class Gato extends Animal {
-    static  int QtdDeGatos;
+public abstract class Animal {
+    protected String nome;
+    protected String cor;
+    protected int idade;
+    protected double peso;
+    protected char sexo;
+    protected String reacao;
 
-    public Gato(String nome, String cor, int idade, double peso, char sexo, String reacao) {
-        super(nome, cor, idade, peso, sexo, reacao);
-    }
-
-    public char getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(char sexo) {
+    public Animal(String nome, String cor, int idade, double peso, char sexo, String reacao) {
+        this.nome = nome;
+        this.cor = cor;
+        this.idade = idade;
+        this.peso = peso;
         this.sexo = sexo;
+        this.reacao = reacao;
     }
 
-    public static int getQtdDeGatos() {
-        return QtdDeGatos;
-    }
+    public Animal() {
 
-    public static void setQtdDeGatos(int qtdDeGatos) {
-        QtdDeGatos = qtdDeGatos;
     }
 
     public String getNome() {
@@ -55,6 +53,14 @@ public class Gato extends Animal {
         this.peso = peso;
     }
 
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
     public String getReacao() {
         return reacao;
     }
@@ -62,9 +68,10 @@ public class Gato extends Animal {
     public void setReacao(String reacao) {
         this.reacao = reacao;
     }
-    @Override
-    public void soar(){
-        System.out.println("MIAU");
+
+    protected void comer(){}
+    protected void dormir(){}
+    public void soar() {
+        System.out.println("    ");
     }
 }
-
