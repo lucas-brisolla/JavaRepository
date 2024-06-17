@@ -1,12 +1,16 @@
 package Animais;
 
 public class Cachorro {
+
+    static int QtdDeCachorros;
     private String nome;
     private String cor;
     private int idade;
     private double peso;
     private char sexo;
     private String reacao;
+
+
 
     public Cachorro() {
     }
@@ -18,6 +22,15 @@ public class Cachorro {
         this.peso = peso;
         this.sexo = sexo;
         this.reacao = reacao;
+        QtdDeCachorros ++;
+    }
+
+    public static int getQtdDeCachorros() {
+        return QtdDeCachorros;
+    }
+
+    public static void setQtdDeCachorros(int qtdDeCachorros) {
+        Cachorro.QtdDeCachorros = qtdDeCachorros;
     }
 
     public String getNome() {
