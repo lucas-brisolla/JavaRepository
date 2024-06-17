@@ -3,7 +3,7 @@ import Animais.Cachorro;
 public class Main {
     public static void main(String[] args) {
         Cachorro doginho = new Cachorro();
-        Cachorro doguinho2 = new Cachorro("Cerberus","Preto")
+        Cachorro doguinho2 = new Cachorro("Cerberus", "Preto", 9, 5.34, 'M', "neutro");
 //        doginho.nome = "Cerberus";
 //        doginho.cor = "Preto";
 //        doginho.idade = 9;

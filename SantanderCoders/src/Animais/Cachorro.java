@@ -1,14 +1,16 @@
 package Animais;
 
 public class Cachorro {
-    private String nome = "Cerberus";
-    private String cor = "Preto";
-    private int idade = 9;
-    private double peso = 5.32;
-    private char sexo = 'M';
+    private String nome;
+    private String cor;
+    private int idade;
+    private double peso;
+    private char sexo;
     private String reacao;
 
-    public Cachorro(){}
+    public Cachorro() {
+    }
+
     public Cachorro(String nome, String cor, int idade, double peso, char sexo, String reacao) {
         this.nome = nome;
         this.cor = cor;
@@ -65,7 +67,7 @@ public class Cachorro {
     public void setReacao(String reacao) {
         this.reacao = reacao;
     }
-}
+
 
     public void latir() {
         System.out.println("AU AU");
@@ -82,11 +84,20 @@ public class Cachorro {
 //            this.reacao = "neutro";
 //        }
 
-        switch (acao){
-            case "carinho": getReacao() = "feliz"; break;
-            case "pisar no rabo": this.reacao = "triste"; break;
-            case "dar comida": this.reacao = "satisfeito"; break;
-            default: this.reacao = "neutro"; break;
+        switch (acao) {
+            case "carinho":
+                this.reacao = "feliz";
+                break;
+            case "pisar no rabo":
+                latir();
+                this.reacao = "triste";
+                break;
+            case "dar comida":
+                this.reacao = "satisfeito";
+                break;
+            default:
+                this.reacao = "neutro";
+                break;
         }
         return this.reacao;
     }
