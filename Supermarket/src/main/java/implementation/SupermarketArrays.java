@@ -3,7 +3,7 @@ package implementation;
 import implementation.Supermarket;
 
 public class SupermarketArrays implements Supermarket {
-    private final String [] items;
+    private final String[] items;
 
     private int lastIndex;
 
@@ -15,7 +15,7 @@ public class SupermarketArrays implements Supermarket {
 
     @Override
     public void add(String item) {
-        if (lastIndex == items.length-1){
+        if (lastIndex == items.length - 1) {
             System.err.println("Lista de compras cheia!");
         } else {
             lastIndex++;
@@ -27,7 +27,7 @@ public class SupermarketArrays implements Supermarket {
     @Override
     public void print() {
         System.out.println("|-------------------------------------------------------|");
-        if (lastIndex < 0){
+        if (lastIndex < 0) {
             System.out.println("A lista está vazia!");
         }
         for (int i = 0; i <= lastIndex; i++) {
@@ -38,7 +38,7 @@ public class SupermarketArrays implements Supermarket {
 
     @Override
     public void delete(int index) {
-        if (index >=0 && index <= lastIndex){
+        if (index >= 0 && index <= lastIndex) {
             shift(index);
             lastIndex--;
         } else {
@@ -47,8 +47,8 @@ public class SupermarketArrays implements Supermarket {
     }
 
     private void shift(final int index) {
-        for (int i = index; i < lastIndex ; i++) {
-            items[i] = items[i+1];
+        for (int i = index; i < lastIndex; i++) {
+            items[i] = items[i + 1];
         }
     }
 }
